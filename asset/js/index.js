@@ -33,7 +33,7 @@ document.addEventListener("dragenter", function(e){
 document.addEventListener("dragleave", function(e){
     // reset background of potential drop target when the draggable element leaves it
     if(e.target.className == "dropzone"){
-        event.target.style.background = "";
+        e.target.style.background = "";
     }
 }, false);
 
@@ -41,9 +41,9 @@ document.addEventListener("drop", function(e){
     // prevent default action (open as link for some elements)
     e.preventDefault();
     // move dragged element to the selected drop target
-    if(event.target.className == "dropzone"){
+    if(e.target.className == "dropzone"){
         e.target.style.background = "";
         dragged.parentNode.removeChild(dragged);
-        event.target.appendChild(dragged);
+        e.target.appendChild(dragged);
     }
 }, false);
