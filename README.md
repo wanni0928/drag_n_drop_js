@@ -1,0 +1,3 @@
+# Trello Clone coding with vanilla js
+
+- there're few bugs but it works anyway...
