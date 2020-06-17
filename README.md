@@ -1,3 +1,3 @@
 # Trello Clone coding with vanilla js
 
-- there're few bugs but it works anyway...
+- fix some bugs.. but need some patches
